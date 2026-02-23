@@ -1,0 +1,8 @@
+# Synthetic PHI Data Generator Requirements
+
+# Core dependency
+Faker>=22.0.0
+
+# Optional but recommended for production
+numpy>=1.24.0
+pandas>=2.0.0

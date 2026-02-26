@@ -1,0 +1,158 @@
+{
+  "entity_types": {
+    "PERSON": {
+      "enabled": true,
+      "probability": 1.0,
+      "description": "Patient names"
+    },
+    "ADDRESS": {
+      "enabled": true,
+      "probability": 0.9,
+      "description": "Street addresses",
+      "include_components": ["street", "city", "state", "country"]
+    },
+    "CITY": {
+      "enabled": true,
+      "probability": 0.8,
+      "description": "City names"
+    },
+    "STATE": {
+      "enabled": true,
+      "probability": 0.7,
+      "description": "State/Province/Region"
+    },
+    "COUNTRY": {
+      "enabled": true,
+      "probability": 0.6,
+      "description": "Country names"
+    },
+    "DATE_OF_BIRTH": {
+      "enabled": true,
+      "probability": 0.9,
+      "description": "Patient date of birth"
+    },
+    "ADMISSION_DATE": {
+      "enabled": true,
+      "probability": 0.9,
+      "description": "Hospital admission date"
+    },
+    "DISCHARGE_DATE": {
+      "enabled": true,
+      "probability": 0.8,
+      "description": "Hospital discharge date"
+    },
+    "DATE": {
+      "enabled": true,
+      "probability": 0.8,
+      "description": "General dates"
+    },
+    "PHONE": {
+      "enabled": true,
+      "probability": 0.9,
+      "description": "Phone numbers with African country codes"
+    },
+    "FAX": {
+      "enabled": true,
+      "probability": 0.6,
+      "description": "Fax numbers with African country codes"
+    },
+    "EMAIL": {
+      "enabled": true,
+      "probability": 0.85,
+      "description": "Email addresses"
+    },
+    "SSN": {
+      "enabled": true,
+      "probability": 0.8,
+      "description": "Social Security Number / National ID"
+    },
+    "MEDICAL_RECORD_NUMBER": {
+      "enabled": true,
+      "probability": 0.9,
+      "description": "Hospital/clinic medical record number"
+    },
+    "HEALTH_PLAN_BENEFICIARY_NUMBER": {
+      "enabled": true,
+      "probability": 0.75,
+      "description": "Health insurance/plan beneficiary number"
+    },
+    "ACCOUNT_NUMBER": {
+      "enabled": true,
+      "probability": 0.5,
+      "description": "Bank or payment account number"
+    }
+  },
+  "african_countries": {
+    "Nigeria": {
+      "code": "NG",
+      "phone_code": "+234",
+      "cities": ["Lagos", "Abuja", "Kano", "Ibadan", "Port Harcourt", "Benin City", "Kaduna"],
+      "states": ["Lagos State", "Kano State", "Rivers State", "Oyo State", "Kaduna State"]
+    },
+    "Kenya": {
+      "code": "KE",
+      "phone_code": "+254",
+      "cities": ["Nairobi", "Mombasa", "Kisumu", "Nakuru", "Eldoret", "Thika"],
+      "states": ["Nairobi County", "Mombasa County", "Kisumu County", "Nakuru County"]
+    },
+    "South Africa": {
+      "code": "ZA",
+      "phone_code": "+27",
+      "cities": ["Johannesburg", "Cape Town", "Durban", "Pretoria", "Port Elizabeth", "Bloemfontein"],
+      "states": ["Gauteng", "Western Cape", "KwaZulu-Natal", "Eastern Cape", "Free State"]
+    },
+    "Ghana": {
+      "code": "GH",
+      "phone_code": "+233",
+      "cities": ["Accra", "Kumasi", "Tamale", "Sekondi-Takoradi", "Tema"],
+      "states": ["Greater Accra Region", "Ashanti Region", "Northern Region", "Western Region"]
+    },
+    "Tanzania": {
+      "code": "TZ",
+      "phone_code": "+255",
+      "cities": ["Dar es Salaam", "Dodoma", "Mwanza", "Arusha", "Mbeya"],
+      "states": ["Dar es Salaam Region", "Dodoma Region", "Mwanza Region", "Arusha Region"]
+    },
+    "Uganda": {
+      "code": "UG",
+      "phone_code": "+256",
+      "cities": ["Kampala", "Gulu", "Lira", "Mbarara", "Jinja"],
+      "states": ["Central Region", "Northern Region", "Eastern Region", "Western Region"]
+    },
+    "Ethiopia": {
+      "code": "ET",
+      "phone_code": "+251",
+      "cities": ["Addis Ababa", "Dire Dawa", "Mekelle", "Gondar", "Bahir Dar"],
+      "states": ["Addis Ababa", "Oromia", "Amhara", "Tigray", "Southern Nations"]
+    },
+    "Rwanda": {
+      "code": "RW",
+      "phone_code": "+250",
+      "cities": ["Kigali", "Butare", "Gisenyi", "Ruhengeri", "Byumba"],
+      "states": ["Kigali City", "Eastern Province", "Northern Province", "Southern Province"]
+    },
+    "Senegal": {
+      "code": "SN",
+      "phone_code": "+221",
+      "cities": ["Dakar", "Touba", "Thiès", "Saint-Louis", "Kaolack"],
+      "states": ["Dakar Region", "Thiès Region", "Saint-Louis Region", "Kaolack Region"]
+    },
+    "Zambia": {
+      "code": "ZM",
+      "phone_code": "+260",
+      "cities": ["Lusaka", "Kitwe", "Ndola", "Kabwe", "Livingstone"],
+      "states": ["Lusaka Province", "Copperbelt Province", "Central Province", "Southern Province"]
+    }
+  },
+  "sentence_templates": {
+    "short_notes": true,
+    "max_words_per_sentence": 15,
+    "focus_on_phi": true,
+    "description": "Generate short, focused sentences that emphasize PHI entities"
+  },
+  "output_settings": {
+    "min_entities_per_record": 3,
+    "max_entities_per_record": 8,
+    "language": "en"
+  }
+}

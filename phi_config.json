@@ -50,6 +50,36 @@
       "enabled": true,
       "probability": 0.9,
       "description": "Phone numbers with African country codes"
+    },
+    "FAX": {
+      "enabled": true,
+      "probability": 0.6,
+      "description": "Fax numbers with African country codes"
+    },
+    "EMAIL": {
+      "enabled": true,
+      "probability": 0.85,
+      "description": "Email addresses"
+    },
+    "SSN": {
+      "enabled": true,
+      "probability": 0.8,
+      "description": "Social Security Number / National ID"
+    },
+    "MEDICAL_RECORD_NUMBER": {
+      "enabled": true,
+      "probability": 0.9,
+      "description": "Hospital/clinic medical record number"
+    },
+    "HEALTH_PLAN_BENEFICIARY_NUMBER": {
+      "enabled": true,
+      "probability": 0.75,
+      "description": "Health insurance/plan beneficiary number"
+    },
+    "ACCOUNT_NUMBER": {
+      "enabled": true,
+      "probability": 0.5,
+      "description": "Bank or payment account number"
     }
   },
   "african_countries": {

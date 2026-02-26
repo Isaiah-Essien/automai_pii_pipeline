@@ -13,18 +13,18 @@ import sys
 def print_record_pretty(record: dict, show_full_text: bool = False):
     """Pretty print a single record."""
     print("\n" + "="*80)
-    print(f"📄 Record ID: {record['id']}")
+    print(f" Record ID: {record['id']}")
     print("="*80)
     
     # Metadata
-    print(f"\n📋 Metadata:")
+    print(f"\n Metadata:")
     print(f"   Source:   {record.get('source', 'N/A')}")
     print(f"   Domain:   {record.get('domain', 'N/A')}")
     print(f"   Language: {record.get('lang', 'N/A')}")
     
     # Text
     text = record.get('text', '')
-    print(f"\n📝 Text ({len(text)} characters):")
+    print(f"\n Text ({len(text)} characters):")
     print("-" * 80)
     if show_full_text or len(text) <= 500:
         print(text)
@@ -34,7 +34,7 @@ def print_record_pretty(record: dict, show_full_text: bool = False):
     
     # Entities
     entities = record.get('entities', [])
-    print(f"\n🏷️  Entities ({len(entities)} total):")
+    print(f"\n Entities ({len(entities)} total):")
     print(f"{'Start':>6} {'End':>6}  {'Label':20}  Entity Text")
     print("-" * 80)
     
@@ -56,7 +56,7 @@ def print_record_pretty(record: dict, show_full_text: bool = False):
         label = ent['label']
         label_counts[label] = label_counts.get(label, 0) + 1
     
-    print(f"\n📊 Entity Distribution:")
+    print(f"\n Entity Distribution:")
     for label, count in sorted(label_counts.items(), key=lambda x: -x[1]):
         print(f"   {label:20} × {count}")
 
@@ -74,7 +74,7 @@ def main():
     record_num = int(sys.argv[2]) if len(sys.argv) > 2 else None
     
     print("="*80)
-    print(f"📂 File: {filepath}")
+    print(f" File: {filepath}")
     print("="*80)
     
     # Load records
@@ -91,7 +91,7 @@ def main():
         if 1 <= record_num <= len(records):
             print_record_pretty(records[record_num - 1], show_full_text=True)
         else:
-            print(f"\n❌ Error: Record number must be between 1 and {len(records)}")
+            print(f"\n Error: Record number must be between 1 and {len(records)}")
             sys.exit(1)
     else:
         # Show first 3 records

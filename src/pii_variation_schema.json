@@ -1,0 +1,418 @@
+{
+  "schema_version": "2.0",
+  "description": "Simplified PII Variation Schema for 18 HIPAA Identifiers",
+  "last_updated": "2026-03-12",
+  
+  "pii_types": {
+    "NAME": {
+      "phi_label": "PERSON",
+      "variation_formats": [
+        "{first_name} {last_name}",
+        "{first_name} {middle_initial}. {last_name}",
+        "{first_name} {middle_name} {last_name}",
+        "{title} {first_name} {last_name}",
+        "{title} {first_name} {middle_initial}. {last_name}",
+        "{last_name}, {first_name}",
+        "{last_name}, {first_name} {middle_initial}.",
+        "{first_initial}. {last_name}",
+        "{first_initial}. {middle_initial}. {last_name}",
+        "{first_initial} {last_name}",
+        "{first_name} {last_name} {suffix}",
+        "{title} {first_name} {middle_name} {last_name} {suffix}",
+        "{LAST_NAME}, {first_name} {middle_initial}."
+      ],
+      "sentence_templates": [
+        "Patient {NAME} was admitted on {DATE}.",
+        "{NAME} presented with chest pain.",
+        "The physician treating {NAME} is {NAME}.",
+        "Contact {NAME} at {PHONE} for emergency.",
+        "{NAME} (DOB: {DATE}) is scheduled for surgery.",
+        "Nurse {NAME} administered medication to {NAME}.",
+        "Emergency contact: {NAME}, relationship: spouse.",
+        "{NAME}'s medical record number is {MEDICAL_RECORD}.",
+        "Dr. {NAME} referred patient {NAME} to cardiology.",
+        "{NAME} lives at {ADDRESS}."
+      ]
+    },
+    
+    "ADDRESS": {
+      "phi_label": "ADDRESS",
+      "variation_formats": [
+        "{street_number} {street_name} {street_type}",
+        "{street_number} {street_name} {street_type}, {unit_type} {unit_number}",
+        "{street_number} {street_name} {street_type}, {city}",
+        "{unit_type} {unit_number}, {street_number} {street_name} {street_type}",
+        "{street_name} {street_type} {street_number}",
+        "{street_number} {street_name}",
+        "No. {street_number} {street_name} {street_type}"
+      ],
+      "sentence_templates": [
+        "Patient resides at {ADDRESS}.",
+        "{NAME} lives at {ADDRESS}.",
+        "Home address: {ADDRESS}.",
+        "The patient was transported from {ADDRESS}.",
+        "Incident occurred at {ADDRESS}.",
+        "Mail prescription to {ADDRESS}.",
+        "{NAME} moved to {ADDRESS} in {DATE}.",
+        "Previous address: {ADDRESS}.",
+        "Contact {NAME} at {ADDRESS} or {PHONE}.",
+        "Emergency services responded to {ADDRESS}."
+      ]
+    },
+    
+    "DATE": {
+      "phi_label": "DATE",
+      "variation_formats": [
+        "{day}/{month}/{year}",
+        "{day}-{month}-{year}",
+        "{month}/{day}/{year}",
+        "{month}-{day}-{year}",
+        "{day} {month_name} {year}",
+        "{day} {month_abbr} {year}",
+        "{month_name} {day}, {year}",
+        "{day}.{month}.{year}",
+        "{year}-{month}-{day}",
+        "{day_name}",
+        "{day_name}, {day} {month_name} {year}"
+      ],
+      "sentence_templates": [
+        "{NAME} was born on {DATE}.",
+        "Date of admission: {DATE}.",
+        "Patient {NAME} was discharged on {DATE}.",
+        "Appointment scheduled for {DATE}.",
+        "Surgery performed on {DATE}.",
+        "{NAME}'s last visit was {DATE}.",
+        "Lab results dated {DATE} show improvement.",
+        "Prescription filled on {DATE}.",
+        "Next follow-up: {DATE}.",
+        "Patient DOB: {DATE}, admitted {DATE}."
+      ]
+    },
+    
+    "PHONE": {
+      "phi_label": "PHONE",
+      "variation_formats": [
+        "+{country_code} {area_code} {exchange} {number}",
+        "+{country_code} {area_code}-{exchange}-{number}",
+        "({area_code}) {exchange}-{number}",
+        "{area_code}-{exchange}-{number}",
+        "{area_code} {exchange} {number}",
+        "{area_code}.{exchange}.{number}",
+        "+{country_code} ({area_code}) {exchange}-{number}",
+        "{area_code}{exchange}{number}"
+      ],
+      "sentence_templates": [
+        "Contact {NAME} at {PHONE}.",
+        "Phone number on file: {PHONE}.",
+        "{NAME} can be reached at {PHONE}.",
+        "Emergency contact: {PHONE}.",
+        "Call {PHONE} to schedule appointment.",
+        "Patient's mobile: {PHONE}.",
+        "Pharmacy fax: {PHONE}.",
+        "For inquiries, dial {PHONE}.",
+        "{NAME} ({PHONE}) requested refill.",
+        "Home: {PHONE}, Work: {PHONE}."
+      ]
+    },
+    
+    "EMAIL": {
+      "phi_label": "EMAIL",
+      "variation_formats": [
+        "{username}@{domain}{tld}",
+        "{first_name}.{last_name}@{domain}{tld}",
+        "{first_initial}{last_name}@{domain}{tld}",
+        "{first_name}{last_initial}@{domain}{tld}",
+        "{first_name}_{last_name}@{domain}{tld}",
+        "{last_name}.{first_name}@{domain}{tld}"
+      ],
+      "sentence_templates": [
+        "Email results to {EMAIL}.",
+        "{NAME}'s email is {EMAIL}.",
+        "Send prescription to {EMAIL}.",
+        "Patient portal login: {EMAIL}.",
+        "Contact {NAME} at {EMAIL}.",
+        "Billing inquiries: {EMAIL}.",
+        "Lab reports sent to {EMAIL}.",
+        "Patient email: {EMAIL}.",
+        "For records, email {EMAIL}.",
+        "{NAME} ({EMAIL}) requested appointment."
+      ]
+    },
+    
+    "SSN": {
+      "phi_label": "ID_SSN",
+      "variation_formats": [
+        "{part1}-{part2}-{part3}",
+        "{part1} {part2} {part3}",
+        "{part1}{part2}{part3}",
+        "***-**-{part3}",
+        "XXX-XX-{part3}"
+      ],
+      "sentence_templates": [
+        "Patient SSN: {SSN}.",
+        "{NAME}'s social security number is {SSN}.",
+        "National ID {SSN} verified.",
+        "SSN on file: {SSN}.",
+        "ID verification: {SSN}.",
+        "Tax ID: {SSN}.",
+        "{NAME} (SSN: {SSN}) enrolled in program.",
+        "Billing SSN: {SSN}.",
+        "Insurance requires SSN {SSN}.",
+        "Identity confirmed with {SSN}."
+      ]
+    },
+    
+    "MEDICAL_RECORD": {
+      "phi_label": "ID_MEDICAL",
+      "variation_formats": [
+        "{prefix}{number}",
+        "{prefix}-{number}",
+        "{prefix} {number}",
+        "{number}{suffix}",
+        "{prefix}{number}{suffix}"
+      ],
+      "sentence_templates": [
+        "Patient MRN: {MEDICAL_RECORD}.",
+        "{NAME}'s medical record is {MEDICAL_RECORD}.",
+        "Chart number {MEDICAL_RECORD} updated.",
+        "Refer to medical record {MEDICAL_RECORD}.",
+        "{NAME} (MRN: {MEDICAL_RECORD}) admitted.",
+        "Record {MEDICAL_RECORD} shows history of diabetes.",
+        "Pull chart {MEDICAL_RECORD} for review.",
+        "Patient ID {MEDICAL_RECORD} matched.",
+        "MRN {MEDICAL_RECORD} flagged for follow-up.",
+        "File under {MEDICAL_RECORD}."
+      ]
+    },
+    
+    "ACCOUNT_NUMBER": {
+      "phi_label": "ID_ACCOUNT",
+      "variation_formats": [
+        "{prefix}{number}",
+        "{prefix}-{number}",
+        "{prefix} {number}"
+      ],
+      "sentence_templates": [
+        "Account number: {ACCOUNT_NUMBER}.",
+        "Bill to account {ACCOUNT_NUMBER}.",
+        "Patient account {ACCOUNT_NUMBER} has outstanding balance.",
+        "{NAME}'s account is {ACCOUNT_NUMBER}.",
+        "Payment applied to {ACCOUNT_NUMBER}.",
+        "Account {ACCOUNT_NUMBER} authorized for procedure.",
+        "Invoice sent to account {ACCOUNT_NUMBER}.",
+        "Financial account: {ACCOUNT_NUMBER}.",
+        "{NAME} (Account: {ACCOUNT_NUMBER}) paid in full.",
+        "Reference account {ACCOUNT_NUMBER} for billing."
+      ]
+    },
+    
+    "LICENSE_NUMBER": {
+      "phi_label": "ID_LICENSE",
+      "variation_formats": [
+        "{prefix}{number}",
+        "{prefix}-{number}",
+        "{prefix} {number}"
+      ],
+      "sentence_templates": [
+        "Driver's license: {LICENSE_NUMBER}.",
+        "{NAME}'s license number is {LICENSE_NUMBER}.",
+        "Professional license {LICENSE_NUMBER} verified.",
+        "MD license: {LICENSE_NUMBER}.",
+        "Nurse {NAME} (License: {LICENSE_NUMBER}) on duty.",
+        "RN license {LICENSE_NUMBER} expires {DATE}.",
+        "Pharmacist license: {LICENSE_NUMBER}.",
+        "DL {LICENSE_NUMBER} on file.",
+        "License verification: {LICENSE_NUMBER}.",
+        "Provider license {LICENSE_NUMBER} active."
+      ]
+    },
+    
+    "VEHICLE_ID": {
+      "phi_label": "ID_VEHICLE",
+      "variation_formats": [
+        "{plate}",
+        "{state} {plate}",
+        "VIN: {vin}"
+      ],
+      "sentence_templates": [
+        "Vehicle plate: {VEHICLE_ID}.",
+        "Patient arrived in vehicle {VEHICLE_ID}.",
+        "Parking validated for {VEHICLE_ID}.",
+        "{NAME} drives {VEHICLE_ID}.",
+        "Vehicle identification: {VEHICLE_ID}.",
+        "Plate {VEHICLE_ID} registered to {NAME}.",
+        "Accident involved vehicle {VEHICLE_ID}.",
+        "VIN {VEHICLE_ID} matched to patient.",
+        "Emergency vehicle {VEHICLE_ID} transported patient.",
+        "Registration {VEHICLE_ID} verified."
+      ]
+    },
+    
+    "DEVICE_ID": {
+      "phi_label": "ID_DEVICE",
+      "variation_formats": [
+        "{manufacturer} {model} S/N: {serial}",
+        "Serial: {serial}",
+        "{model}-{serial}",
+        "Device ID: {serial}"
+      ],
+      "sentence_templates": [
+        "Implant serial number: {DEVICE_ID}.",
+        "Device {DEVICE_ID} implanted in {NAME}.",
+        "Pacemaker SN: {DEVICE_ID}.",
+        "Medical device {DEVICE_ID} recalled.",
+        "{NAME} has device {DEVICE_ID} implanted.",
+        "Equipment serial: {DEVICE_ID}.",
+        "Monitor {DEVICE_ID} assigned to patient.",
+        "Device ID {DEVICE_ID} tracked.",
+        "Prosthetic {DEVICE_ID} fitted on {DATE}.",
+        "Implant {DEVICE_ID} requires follow-up."
+      ]
+    },
+    
+    "URL": {
+      "phi_label": "URL",
+      "variation_formats": [
+        "{protocol}{subdomain}.{domain}{tld}",
+        "{protocol}{domain}{tld}/{path}",
+        "{subdomain}.{domain}{tld}"
+      ],
+      "sentence_templates": [
+        "Patient portal: {URL}.",
+        "Visit {URL} for results.",
+        "Website: {URL}.",
+        "Access records at {URL}.",
+        "Login to {URL} for appointments.",
+        "Telehealth link: {URL}.",
+        "Medical records available at {URL}.",
+        "Register at {URL}.",
+        "{NAME} accessed {URL}.",
+        "For information, visit {URL}."
+      ]
+    },
+    
+    "IP_ADDRESS": {
+      "phi_label": "IP_ADDRESS",
+      "variation_formats": [
+        "{octet1}.{octet2}.{octet3}.{octet4}"
+      ],
+      "sentence_templates": [
+        "Device IP: {IP_ADDRESS}.",
+        "Patient accessed portal from {IP_ADDRESS}.",
+        "Connection from {IP_ADDRESS}.",
+        "System IP: {IP_ADDRESS}.",
+        "Medical device at {IP_ADDRESS}.",
+        "Login detected from {IP_ADDRESS}.",
+        "Server IP: {IP_ADDRESS}.",
+        "Network address {IP_ADDRESS} flagged.",
+        "Equipment IP {IP_ADDRESS} online.",
+        "Remote access via {IP_ADDRESS}."
+      ]
+    },
+    
+    "BIOMETRIC": {
+      "phi_label": "BIOMETRIC",
+      "variation_formats": [
+        "{type} ID: {id}",
+        "Biometric: {id}",
+        "{type}: {id}"
+      ],
+      "sentence_templates": [
+        "Fingerprint ID: {BIOMETRIC}.",
+        "Biometric {BIOMETRIC} on file.",
+        "{NAME}'s biometric scan: {BIOMETRIC}.",
+        "Iris scan {BIOMETRIC} matched.",
+        "Facial recognition: {BIOMETRIC}.",
+        "Voice print {BIOMETRIC} verified.",
+        "Biometric authentication: {BIOMETRIC}.",
+        "Patient identified by {BIOMETRIC}.",
+        "Scan {BIOMETRIC} recorded.",
+        "Biometric ID {BIOMETRIC} unique."
+      ]
+    },
+    
+    "PHOTO": {
+      "phi_label": "PHOTO",
+      "variation_formats": [
+        "{filename}{extension}",
+        "IMG_{number}{extension}",
+        "{date}_{filename}{extension}"
+      ],
+      "sentence_templates": [
+        "Patient photo: {PHOTO}.",
+        "X-ray image {PHOTO} reviewed.",
+        "Photo ID: {PHOTO}.",
+        "Scan file {PHOTO} attached.",
+        "Image {PHOTO} shows fracture.",
+        "Photograph {PHOTO} taken on {DATE}.",
+        "{NAME}'s photo: {PHOTO}.",
+        "MRI image {PHOTO} uploaded.",
+        "Facial photo {PHOTO} on record.",
+        "Document {PHOTO} scanned."
+      ]
+    },
+    
+    "CERTIFICATE": {
+      "phi_label": "ID_CERTIFICATE",
+      "variation_formats": [
+        "{type} Certificate: {number}",
+        "{type} Cert #{number}",
+        "{number}/{year}"
+      ],
+      "sentence_templates": [
+        "Birth certificate: {CERTIFICATE}.",
+        "Death certificate {CERTIFICATE} issued.",
+        "{NAME}'s birth certificate: {CERTIFICATE}.",
+        "Certificate number {CERTIFICATE} on file.",
+        "Marriage certificate: {CERTIFICATE}.",
+        "Official certificate {CERTIFICATE} verified.",
+        "Certificate {CERTIFICATE} dated {DATE}.",
+        "Legal document {CERTIFICATE} submitted.",
+        "Certificate ID {CERTIFICATE} authenticated.",
+        "{NAME} provided certificate {CERTIFICATE}."
+      ]
+    },
+    
+    "HEALTH_PLAN": {
+      "phi_label": "ID_HEALTH_PLAN",
+      "variation_formats": [
+        "{prefix}{number}",
+        "{prefix}-{number}",
+        "{prefix} {number}"
+      ],
+      "sentence_templates": [
+        "Insurance ID: {HEALTH_PLAN}.",
+        "{NAME}'s policy number: {HEALTH_PLAN}.",
+        "Member ID {HEALTH_PLAN} active.",
+        "Health plan: {HEALTH_PLAN}.",
+        "Subscriber ID: {HEALTH_PLAN}.",
+        "Coverage under {HEALTH_PLAN}.",
+        "Plan {HEALTH_PLAN} covers procedure.",
+        "Insurance {HEALTH_PLAN} verified.",
+        "Policy {HEALTH_PLAN} expires {DATE}.",
+        "Beneficiary {HEALTH_PLAN} enrolled."
+      ]
+    },
+    
+    "LOCATION": {
+      "phi_label": "LOCATION",
+      "variation_formats": [
+        "{name} {type}",
+        "{name} {type}, {department}",
+        "{name} {type} - {department} Department"
+      ],
+      "sentence_templates": [
+        "Patient treated at {LOCATION}.",
+        "Admitted to {LOCATION}.",
+        "{NAME} transferred to {LOCATION}.",
+        "Surgery performed at {LOCATION}.",
+        "Facility: {LOCATION}.",
+        "Emergency at {LOCATION}.",
+        "{NAME} works at {LOCATION}.",
+        "Referred to {LOCATION}.",
+        "Discharged from {LOCATION}.",
+        "Appointment at {LOCATION} on {DATE}."
+      ]
+    }
+  }
+}

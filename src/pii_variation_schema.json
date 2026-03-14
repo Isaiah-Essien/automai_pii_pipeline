@@ -413,6 +413,32 @@
         "Discharged from {LOCATION}.",
         "Appointment at {LOCATION} on {DATE}."
       ]
+    },
+
+    "FAX": {
+      "phi_label": "FAX",
+      "variation_formats": [
+        "+{country_code} {area_code} {exchange} {number}",
+        "+{country_code} {area_code}-{exchange}-{number}",
+        "({area_code}) {exchange}-{number}",
+        "{area_code}-{exchange}-{number}",
+        "{area_code} {exchange} {number}",
+        "{area_code}.{exchange}.{number}",
+        "+{country_code} ({area_code}) {exchange}-{number}",
+        "{area_code}{exchange}{number}"
+      ],
+      "sentence_templates": [
+        "Fax records to {NAME} at {FAX}.",
+        "Fax number on file: {FAX}.",
+        "Please fax referral to {FAX}.",
+        "Send authorization forms to {FAX}.",
+        "Physician fax: {FAX}.",
+        "Pharmacy fax: {FAX}.",
+        "Office fax for {NAME}: {FAX}.",
+        "Fax consent form to {FAX} attention {NAME}.",
+        "Insurance fax line: {FAX}.",
+        "To transmit records, use {FAX}."
+      ]
     }
   }
 }

@@ -68,7 +68,52 @@ class VehicleIDGenerator:
             "Medical escort vehicle {VEHICLE_ID}.",
             "Personnel vehicle {VEHICLE_ID} badge valid.",
             "Security patrol vehicle {VEHICLE_ID}.",
-            "Maintenance vehicle {VEHICLE_ID} on site."
+            "Maintenance vehicle {VEHICLE_ID} on site.",
+            "Security checkpoint: vehicle {VEHICLE_ID}.",
+            "Parking garage record {VEHICLE_ID}.",
+            "Toll gate passage {VEHICLE_ID}.",
+            "Fleet vehicle {VEHICLE_ID} tracking.",
+            "Corporate vehicle {VEHICLE_ID} assignment.",
+            "Hospital shuttle {VEHICLE_ID} route.",
+            "Patient discharge by {VEHICLE_ID}.",
+            "Hospital admission by {VEHICLE_ID}.",
+            "Emergency room arrival {VEHICLE_ID}.",
+            "ICU patient transport {VEHICLE_ID}.",
+            "Operating room prep {VEHICLE_ID}.",
+            "Recovery room patient {VEHICLE_ID}.",
+            "Intensive care transfer {VEHICLE_ID}.",
+            "Long-term care facility vehicle {VEHICLE_ID}.",
+            "Rehabilitation center transport {VEHICLE_ID}.",
+            "Mental health facility vehicle {VEHICLE_ID}.",
+            "Psychiatric evaluation transport {VEHICLE_ID}.",
+            "Substance abuse facility vehicle {VEHICLE_ID}.",
+            "Assisted living transport {VEHICLE_ID}.",
+            "Nursing home shuttle {VEHICLE_ID}.",
+            "Hospice care vehicle {VEHICLE_ID}.",
+            "End-of-life transport {VEHICLE_ID}.",
+            "Deceased transportation {VEHICLE_ID}.",
+            "Mortuary transport {VEHICLE_ID}.",
+            "Medical examiner vehicle {VEHICLE_ID}.",
+            "Coroner's vehicle {VEHICLE_ID}.",
+            "Pathology specimen {VEHICLE_ID}.",
+            "Autopsy transport {VEHICLE_ID}.",
+            "Hospital maintenance vehicle {VEHICLE_ID}.",
+            "Facility management fleet {VEHICLE_ID}.",
+            "Environmental services transport {VEHICLE_ID}.",
+            "Housekeeping vehicle {VEHICLE_ID}.",
+            "Custodial services {VEHICLE_ID}.",
+            "Waste management vehicle {VEHICLE_ID}.",
+            "Biohazard disposal {VEHICLE_ID}.",
+            "Medical waste transport {VEHICLE_ID}.",
+            "Infectious material vehicle {VEHICLE_ID}.",
+            "Quarantine transport {VEHICLE_ID}.",
+            "Isolation unit delivery {VEHICLE_ID}.",
+            "Contact tracing vehicle {VEHICLE_ID}.",
+            "Public health surveillance {VEHICLE_ID}.",
+            "Disease reporting vehicle {VEHICLE_ID}.",
+            "Epidemiology investigation {VEHICLE_ID}.",
+            "Pandemic response vehicle {VEHICLE_ID}.",
+            "Mass vaccination site {VEHICLE_ID}."
         ]
         
         # Load vehicle components
@@ -302,4 +347,4 @@ class VehicleIDGenerator:
 
 if __name__ == "__main__":
     generator = VehicleIDGenerator()
-    generator.run(sentences_per_format=10000)
+    generator.run(sentences_per_format=26667)

@@ -55,7 +55,7 @@ class PIIDatasetOrchestrator:
                 'name': 'mrn',
                 'module_path': 'pii.mrn.generate_mrn_pii',
                 'class_name': 'MRNPIIGenerator',
-                'sentences_per_format': 10000,
+                'sentences_per_format': 20000,
                 'num_formats': 5,
                 'output_prefix': 'mrn_pii',
             },
@@ -63,7 +63,7 @@ class PIIDatasetOrchestrator:
                 'name': 'ip_address',
                 'module_path': 'pii.ip.generate_ip_pii',
                 'class_name': 'IPAddressGenerator',
-                'sentences_per_format': 10000,
+                'sentences_per_format': 50000,
                 'num_formats': 1,
                 'output_prefix': 'ip_pii',
             },
@@ -71,9 +71,9 @@ class PIIDatasetOrchestrator:
                 'name': 'account_number',
                 'module_path': 'pii.account_no.generate_account_number_pii',
                 'class_name': 'AccountNumberGenerator',
-                'sentences_per_format': 10000,
+                'sentences_per_format': 16667,
                 'num_formats': 3,
-                'output_prefix': 'account_pii',
+                'output_prefix': 'account_number_pii',
             },
             {
                 'name': 'physical_address',
@@ -95,7 +95,7 @@ class PIIDatasetOrchestrator:
                 'name': 'vehicle_id',
                 'module_path': 'pii.vehicle_no.generate_vehicle_id_pii',
                 'class_name': 'VehicleIDGenerator',
-                'sentences_per_format': 10000,
+                'sentences_per_format': 26667,
                 'num_formats': 3,
                 'output_prefix': 'vehicle_id_pii',
             },
@@ -111,7 +111,7 @@ class PIIDatasetOrchestrator:
                 'name': 'device_id',
                 'module_path': 'pii.device_sn.generate_device_id_pii',
                 'class_name': 'DeviceIDGenerator',
-                'sentences_per_format': 10000,
+                'sentences_per_format': 25000,
                 'num_formats': 4,
                 'output_prefix': 'device_id_pii',
             },
@@ -127,13 +127,13 @@ class PIIDatasetOrchestrator:
                 'name': 'fax',
                 'module_path': 'pii.faxs.generate_fax_pii',
                 'class_name': 'FAXGenerator',
-                'sentences_per_format': 5000,
+                'sentences_per_format': 10000,
                 'num_formats': 8,
                 'output_prefix': 'fax_pii',
             },
             {
                 'name': 'location',
-                'module_path': 'pii.geo_sub_divs.geo_sub_divs',
+                'module_path': 'pii.geo_sub_divs.generate_geo_sub_divs_pii',
                 'class_name': 'LocationGenerator',
                 'sentences_per_format': 10000,
                 'num_formats': 3,
@@ -143,7 +143,7 @@ class PIIDatasetOrchestrator:
                 'name': 'phone',
                 'module_path': 'pii.phones.generate_phone_pii',
                 'class_name': 'PhonePIIGenerator',
-                'sentences_per_format': 5000,
+                'sentences_per_format': 12500,
                 'num_formats': 8,
                 'output_prefix': 'phone_pii',
             },
@@ -241,41 +241,32 @@ class PIIDatasetOrchestrator:
         """
         Copy generated files from source to target directory if they exist in original location.
         """
-        module_dir = os.path.join(
-            os.path.dirname(__file__),
-            'src',
-            config['module_path'].replace('.', '/')[:-len(config['module_path'].split('.')[-1])],
-            config['module_path'].split('.')[-1].replace('generate_', '').replace('_pii', '')
-        )
-        
-        # More direct path
         name = config['name']
-        if name == 'location':
-            source_dir = os.path.join(os.path.dirname(__file__), 'src/pii/geo_sub_divs')
-            file_prefix = 'geo_sub_divs'
-        else:
-            source_mapping = {
-                'names': ('names', 'name_pii'),
-                'dates': ('dates', 'date_pii'),
-                'emails': ('emails', 'email_pii'),
-                'mrn': ('mrn', 'mrn_pii'),
-                'ip_address': ('ip', 'ip_pii'),
-                'account_number': ('account_no', 'account_pii'),
-                'physical_address': ('phy_address', 'address_pii'),
-                'urls': ('urls', 'url_pii'),
-                'vehicle_id': ('vehicle_no', 'vehicle_id_pii'),
-                'ssn': ('ssn', 'ssn_pii'),
-                'device_id': ('device_sn', 'device_id_pii'),
-                'certificates_licenses': ('cert_license', 'certlic_pii'),
-                'fax': ('faxs', 'fax_pii'),
-                'phone': ('phones', 'phone_pii'),
-            }
-            
-            if name in source_mapping:
-                folder, file_prefix = source_mapping[name]
-                source_dir = os.path.join(os.path.dirname(__file__), f'src/pii/{folder}')
-            else:
-                return
+        
+        # Mapping of generator names to their source folders and file prefixes
+        source_mapping = {
+            'names': ('names', 'name_pii'),
+            'dates': ('dates', 'date_pii'),
+            'emails': ('emails', 'email_pii'),
+            'mrn': ('mrn', 'mrn_pii'),
+            'ip_address': ('ip', 'ip_pii'),
+            'account_number': ('account_no', 'account_number_pii'),
+            'physical_address': ('phy_address', 'address_pii'),
+            'urls': ('urls', 'url_pii'),
+            'vehicle_id': ('vehicle_no', 'vehicle_id_pii'),
+            'ssn': ('ssn', 'ssn_pii'),
+            'device_id': ('device_sn', 'device_id_pii'),
+            'certificates_licenses': ('cert_license', 'certlic_pii'),
+            'fax': ('faxs', 'fax_pii'),
+            'location': ('geo_sub_divs', 'geo_sub_divs'),
+            'phone': ('phones', 'phone_pii'),
+        }
+        
+        if name not in source_mapping:
+            return
+        
+        folder, file_prefix = source_mapping[name]
+        source_dir = os.path.join(os.path.dirname(__file__), f'src/pii/{folder}')
         
         # Copy generated files if they exist in source
         for suffix in ['_dataset.json', '_templates.json', '_sentences.json']:

@@ -75,7 +75,7 @@ class FAXGenerator:
         }
     
     def generate_dataset_for_format(self, format_index: int, format_pattern: str, 
-                                    sentences_per_format: int = 5000, 
+                                    sentences_per_format: int = 10000, 
                                     start_id: int = 1) -> tuple:
         """Generate dataset for a specific FAX format."""
         data = []
@@ -101,7 +101,7 @@ class FAXGenerator:
         
         return data, current_id
     
-    def generate_complete_dataset(self, sentences_per_format: int = 5000) -> List[Dict[str, Any]]:
+    def generate_complete_dataset(self, sentences_per_format: int = 10000) -> List[Dict[str, Any]]:
         """Generate complete dataset across all FAX formats."""
         all_data = []
         current_id = 1
@@ -181,13 +181,14 @@ class FAXGenerator:
         file_size_mb = os.path.getsize(output_file) / (1024 * 1024)
         print(f"✓ Template file saved successfully! File size: {file_size_mb:.2f} MB")
     
-    def run(self, sentences_per_format: int = 5000):
+    def run(self, sentences_per_format: int = 10000):
         """Generate and save both dataset and template files."""
         print("=" * 60)
         print("FAX Number PII Generator")
         print("=" * 60)
         print("\nConfiguration:")
         print(f"- FAX formats: {len(self.fax_formats)}")
+        print(f"- Sentences per format: {sentences_per_format:,}")
         print(f"- Templates: {len(self.fax_templates)}")
         print(f"- Total output: {len(self.fax_formats) * sentences_per_format:,} sentences")
         
@@ -202,4 +203,4 @@ class FAXGenerator:
 
 if __name__ == "__main__":
     generator = FAXGenerator()
-    generator.run(sentences_per_format=5000)
+    generator.run(sentences_per_format=10000)

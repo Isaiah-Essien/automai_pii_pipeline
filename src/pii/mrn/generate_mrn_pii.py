@@ -402,8 +402,8 @@ def main():
     print(f"Sample Suffixes: {', '.join(generator.suffixes[:5])}")
     print()
     
-    # Generate dataset
-    dataset = generator.generate_complete_dataset(sentences_per_format=10000)
+    # Generate dataset - 20,000 sentences per format (5 formats × 20,000 = 100,000 total)
+    dataset = generator.generate_complete_dataset(sentences_per_format=20000)
     
     # Save to file
     generator.save_dataset(dataset, "mrn_pii_dataset.json")

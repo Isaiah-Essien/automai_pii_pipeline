@@ -15,14 +15,20 @@ Output:
 
 import json
 import random
+import os
 from typing import List, Dict, Tuple
 
 
 class PhonePIIGenerator:
     """Generate phone PII variations with sentences."""
     
-    def __init__(self, schema_path: str = "pii_variation_schema.json"):
+    def __init__(self, schema_path: str = None):
         """Initialize with schema file."""
+        if schema_path is None:
+            # Use dynamic path resolution
+            module_dir = os.path.dirname(os.path.abspath(__file__))
+            schema_path = os.path.join(module_dir, '../../pii_variation_schema.json')
+        
         with open(schema_path, 'r', encoding='utf-8') as f:
             self.schema = json.load(f)
         
@@ -354,4 +360,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    generator = PhonePIIGenerator()
+    # Generate 12,500 sentences per format (8 formats × 12,500 = 100,000 total)
+    dataset = generator.generate_complete_dataset(sentences_per_format=12500)
+    generator.save_dataset(dataset, "phone_pii_dataset.json")
+    generator.save_template_dataset(dataset, "phone_pii_templates.json")

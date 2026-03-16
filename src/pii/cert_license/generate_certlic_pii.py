@@ -215,7 +215,7 @@ class CertificateLicenseGenerator:
         
         return dataset
     
-    def generate_complete_dataset(self, sentences_per_format: int = 5000) -> Dict[str, Any]:
+    def generate_complete_dataset(self, sentences_per_format: int = 10000) -> Dict[str, Any]:
         """Generate complete dataset across all format variations."""
         all_data = {
             "metadata": {
@@ -332,7 +332,7 @@ class CertificateLicenseGenerator:
         file_size_mb = os.path.getsize(filename) / (1024 * 1024)
         print(f"✓ Template file saved successfully! File size: {file_size_mb:.2f} MB")
     
-    def run(self, sentences_per_format: int = 5000):
+    def run(self, sentences_per_format: int = 10000):
         """Generate and save both dataset and template files."""
         print("\n" + "="*60)
         print("Certificate & License PII Generator")
@@ -341,6 +341,7 @@ class CertificateLicenseGenerator:
         print(f"\nConfiguration:")
         print(f"- Certificate formats: {len(self.certificate_formats)}")
         print(f"- License formats: {len(self.license_formats)}")
+        print(f"- Sentences per format: {sentences_per_format:,}")
         print(f"- Certificate templates: {len(self.certificate_templates)}")
         print(f"- License templates: {len(self.license_templates)}")
         print(f"- Certificate types: {len(self.certificate_types)}")
@@ -364,4 +365,4 @@ class CertificateLicenseGenerator:
 
 if __name__ == "__main__":
     generator = CertificateLicenseGenerator()
-    generator.run(sentences_per_format=5000)
+    generator.run(sentences_per_format=10000)

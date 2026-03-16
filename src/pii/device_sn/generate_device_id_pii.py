@@ -312,4 +312,5 @@ class DeviceIDGenerator:
 
 if __name__ == "__main__":
     generator = DeviceIDGenerator()
-    generator.run(sentences_per_format=10000)
+    # Generate 25,000 sentences per format (4 formats × 25,000 = 100,000 total)
+    generator.run(sentences_per_format=25000)

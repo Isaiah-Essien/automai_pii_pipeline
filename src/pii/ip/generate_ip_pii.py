@@ -190,4 +190,5 @@ class IPAddressGenerator:
 
 if __name__ == "__main__":
     generator = IPAddressGenerator()
-    generator.run(sentences_per_format=10000)
+    # Generate 50,000 sentences for single IP format (1 format × 50,000 = 50,000 total)
+    generator.run(sentences_per_format=50000)

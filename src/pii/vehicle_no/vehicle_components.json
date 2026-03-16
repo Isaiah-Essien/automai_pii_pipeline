@@ -80,6 +80,131 @@
         "{letters}{digits}{state}"
       ],
       "description": "Ghana plates"
+    },
+    "zimbabwe": {
+      "country_code": "ZW",
+      "states": ["BU", "HA", "MA", "MI", "MZ", "SA", "VIC", "WM"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}",
+        "{state}{letters}{digits}"
+      ],
+      "description": "Zimbabwe plates"
+    },
+    "zambia": {
+      "country_code": "ZM",
+      "states": ["CB", "CN", "EA", "LK", "LS", "LV", "MW", "NW", "NE"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}",
+        "{digits}{state}{letters}"
+      ],
+      "description": "Zambia plates"
+    },
+    "rwanda": {
+      "country_code": "RW",
+      "states": ["KI", "KN", "EL", "SO", "WE"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}",
+        "{state}{letters}{digits}"
+      ],
+      "description": "Rwanda plates"
+    },
+    "botswana": {
+      "country_code": "BW",
+      "states": ["CE", "EL", "GA", "KG", "NW", "SE"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}"
+      ],
+      "description": "Botswana plates"
+    },
+    "namibia": {
+      "country_code": "NA",
+      "states": ["KH", "ON", "ER", "OW", "KK", "KU", "OT", "OM", "CA"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}",
+        "{state}{letters}{digits}"
+      ],
+      "description": "Namibia plates"
+    },
+    "lesotho": {
+      "country_code": "LS",
+      "states": ["BC", "BM", "MT", "MF", "ML"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}"
+      ],
+      "description": "Lesotho plates"
+    },
+    "malawi": {
+      "country_code": "MW",
+      "states": ["BC", "BL", "CT", "CW", "LK", "LL", "MW", "ML", "MZ", "NC", "SA"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}",
+        "{digits}{state}{letters}"
+      ],
+      "description": "Malawi plates"
+    },
+    "mozambique": {
+      "country_code": "MZ",
+      "states": ["CB", "GZ", "IN", "MZ", "SM", "SO", "TE", "ZA"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}",
+        "{state}{letters}{digits}"
+      ],
+      "description": "Mozambique plates"
+    },
+    "burundi": {
+      "country_code": "BI",
+      "states": ["BJ", "BM", "BR", "BU", "CB", "CI", "GI", "KR", "MY", "NG", "RM", "RT", "RU"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}"
+      ],
+      "description": "Burundi plates"
+    },
+    "congo": {
+      "country_code": "CG",
+      "states": ["BO", "BR", "CU", "IE", "KO", "LE", "LI", "PL", "PO", "SA"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}",
+        "{digits}{state}{letters}"
+      ],
+      "description": "Congo plates"
+    },
+    "cameroon": {
+      "country_code": "CM",
+      "states": ["AD", "CE", "CH", "CO", "CU", "EA", "EN", "ES", "LT", "LI", "NO", "NW", "SU", "SW", "WE"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}"
+      ],
+      "description": "Cameroon plates"
+    },
+    "senegal": {
+      "country_code": "SN",
+      "states": ["DA", "DI", "FA", "KA", "KO", "KE", "LO", "MA", "SL", "SE", "TA", "TH", "ZI"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}",
+        "{state}{letters}{digits}"
+      ],
+      "description": "Senegal plates"
+    },
+    "ivory_coast": {
+      "country_code": "CI",
+      "states": ["AB", "AG", "BA", "BF", "BM", "BS", "GB", "GF", "GN", "HM", "LK", "MN", "PR", "SM", "SV", "WR", "YM", "ZN"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}"
+      ],
+      "description": "Ivory Coast plates"
     }
   },
   

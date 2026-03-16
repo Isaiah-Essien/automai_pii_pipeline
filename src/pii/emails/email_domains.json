@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "description": "African-focused email domains for healthcare and institutional use",
+    "total_domains": 50
+  },
+  "healthcare_domains": [
+    "hospital.co.za",
+    "clinic.ke",
+    "health.ng",
+    "medical.tz",
+    "pharmacy.gh",
+    "healthsystem.et",
+    "healthcare.ug",
+    "patient.zm",
+    "wellness.bw",
+    "care.zw",
+    "medicalcenter.cm",
+    "healthportal.drc",
+    "clinic.sn",
+    "facilities.ci",
+    "services.mli"
+  ],
+  "institutional_domains": [
+    "university.ac.za",
+    "edu.ke",
+    "research.ng",
+    "institute.et",
+    "academy.ug",
+    "center.tz",
+    "foundation.gh",
+    "organization.zm",
+    "group.bw",
+    "consortium.zw",
+    "network.cm",
+    "alliance.drc",
+    "partnership.sn",
+    "cooperative.ci",
+    "association.mli"
+  ],
+  "government_domains": [
+    "health.gov.za",
+    "moh.ke",
+    "ministry.ng",
+    "doh.et",
+    "healthmin.ug",
+    "publicealth.tz",
+    "wellness.gov.gh",
+    "social.zm",
+    "services.bw",
+    "care.gov.zw",
+    "healthcare.cm",
+    "health.drc",
+    "sante.sn",
+    "santé.ci",
+    "sante.mli"
+  ],
+  "commercial_domains": [
+    "mail.com",
+    "gmail.com",
+    "yahoo.com",
+    "outlook.com",
+    "protonmail.com",
+    "inbox.com",
+    "zoho.com",
+    "icloud.com",
+    "mail.africa"
+  ],
+  "regions": {
+    "South_Africa": ["hospital.co.za", "university.ac.za", "health.gov.za"],
+    "Kenya": ["clinic.ke", "edu.ke", "moh.ke"],
+    "Nigeria": ["health.ng", "research.ng", "ministry.ng"],
+    "Ethiopia": ["medical.tz", "institute.et", "doh.et"],
+    "Uganda": ["pharmacy.gh", "academy.ug", "healthmin.ug"],
+    "Tanzania": ["health.tz", "center.tz", "publicealth.tz"],
+    "Ghana": ["clinic.gh", "foundation.gh", "wellness.gov.gh"],
+    "Zambia": ["patient.zm", "group.zm", "social.zm"],
+    "Botswana": ["wellness.bw", "organization.bw", "services.bw"],
+    "Zimbabwe": ["care.zw", "consortium.zw", "care.gov.zw"]
+  }
+}

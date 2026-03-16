@@ -1,0 +1,46 @@
+{
+  "protocols": [
+    "https://",
+    "http://",
+    "https://",
+    "https://"
+  ],
+  
+  "subdomains": [
+    "patient", "portal", "records", "appointment", "billing", "health", "medical", "clinic",
+    "hospital", "pharmacy", "lab", "radiology", "cardiology", "pediatrics", "surgery", "emergency",
+    "telemedicine", "consultation", "secure", "member", "provider", "insurance", "care", "wellness",
+    "wellness", "diagnostic", "imaging", "pathology", "oncology", "neurology", "ortho", "dental"
+  ],
+  
+  "healthcare_domains": [
+    "medicalafrica", "africahealth", "healthplus", "wellnesscare", "clinicnet",
+    "hospitalshare", "doctoronline", "patientcare", "medicalsuite", "healthportal",
+    "careconnect", "medicalhub", "diagnostics", "pharmapoint", "labresults",
+    "teledoc", "virtualcare", "e-health", "medix", "vitals",
+    "health-assist", "medical-net", "clinic-hub", "doctor-connect", "patient-plus"
+  ],
+  
+  "domains": [
+    "medicalafrica", "africahealth", "healthplus", "wellnesscare", "clinicnet",
+    "hospitalshare", "doctoronline", "patientcare", "medicalsuite", "healthportal",
+    "careconnect", "medicalhub", "diagnostics", "pharmapoint", "labresults",
+    "teledoc", "virtualcare", "e-health", "medix", "vitals",
+    "health-assist", "medical-net", "clinic-hub", "doctor-connect", "patient-plus",
+    "google", "microsoft", "apple", "amazon", "ibm",
+    "epic", "cerner", "medidata", "athenahealth", "veradigm"
+  ],
+  
+  "tlds": [
+    ".com", ".org", ".net", ".io", ".co", ".info", ".biz", ".health",
+    ".med", ".clinic", ".hospital", ".africa", ".ke", ".za", ".ng", ".gh"
+  ],
+  
+  "paths": [
+    "patient-portal", "medical-records", "appointment-booking", "billing-center",
+    "lab-results", "prescription-refill", "telehealth", "patient-login",
+    "secure-messaging", "health-profile", "insurance-verification", "appointment-history",
+    "discharge-summary", "test-results", "immunization-records", "medication-list",
+    "care-team", "symptom-checker", "appointment-scheduler", "document-upload"
+  ]
+}

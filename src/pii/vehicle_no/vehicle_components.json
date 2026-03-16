@@ -1,0 +1,100 @@
+{
+  "countries_and_plates": {
+    "south_africa": {
+      "country_code": "ZA",
+      "states": ["EC", "FS", "GP", "KZN", "LP", "MP", "NC", "NW", "WC"],
+      "plate_formats": [
+        "{state}{digits1}{letters}{digits2}",
+        "{letters}{digits}{letters}{state}"
+      ],
+      "description": "South Africa plates"
+    },
+    "nigeria": {
+      "country_code": "NG",
+      "states": ["AB", "AD", "AK", "AN", "BA", "BE", "BO", "BY", "CL", "CT", "DE", "ED", "EK", "EN", "GO", "GU", "JI", "KD", "KN", "KT", "KW", "LA", "NA", "NI", "OG", "ON", "OS", "OY", "PL", "RI", "SO", "TA", "YO", "ZA"],
+      "plate_formats": [
+        "{state}{digits1}{letters}{digits2}",
+        "{letters}{digits}{state}"
+      ],
+      "description": "Nigeria plates"
+    },
+    "kenya": {
+      "country_code": "KE",
+      "states": ["KCA", "KCB", "KCC", "KCD", "KCE", "KCF", "KCG", "KCH", "KCI", "KCJ", "KCK", "KCL", "KCM", "KCN"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}"
+      ],
+      "description": "Kenya plates"
+    },
+    "egypt": {
+      "country_code": "EG",
+      "states": ["CA", "AL", "ASN", "PTS", "CHA", "GIZ", "ISM", "MNF", "AST", "BSW", "QN", "SKH", "SNI"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{digits}{letters}{state}"
+      ],
+      "description": "Egypt plates"
+    },
+    "morocco": {
+      "country_code": "MA",
+      "states": ["AG", "AL", "AS", "AZ", "BH", "BJ", "CD", "CT", "DR", "ER", "ES", "FZ", "HD", "HZ", "KH", "MD", "MK", "ML", "NE", "OS", "SJ", "SK", "SM", "TG"],
+      "plate_formats": [
+        "{digits}{letters}{state}",
+        "{state}{digits}{letters}"
+      ],
+      "description": "Morocco plates"
+    },
+    "ethiopia": {
+      "country_code": "ET",
+      "states": ["AAA", "ARS", "BEN", "SNNPR", "GAM", "HAR", "OMB", "DRE", "CFA"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}"
+      ],
+      "description": "Ethiopia plates"
+    },
+    "tanzania": {
+      "country_code": "TZ",
+      "states": ["DSM", "ARU", "DAR", "DOD", "IRR", "KIL", "KGO", "KAT", "LIN", "MBE", "MGR", "MOR", "MWZ", "PWA", "RKA", "RVU", "TAB", "TAN", "JRO"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{digits}{state}{letters}"
+      ],
+      "description": "Tanzania plates"
+    },
+    "uganda": {
+      "country_code": "UG",
+      "states": ["CMP", "EWR", "KAL", "KMY", "KMP", "WRN", "WTR"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{digits}{letters}{state}"
+      ],
+      "description": "Uganda plates"
+    },
+    "ghana": {
+      "country_code": "GH",
+      "states": ["AH", "AS", "BA", "BO", "CE", "EA", "GA", "NE", "NW", "OT", "SV", "UE", "UW", "WR"],
+      "plate_formats": [
+        "{state}{digits}{letters}",
+        "{letters}{digits}{state}"
+      ],
+      "description": "Ghana plates"
+    }
+  },
+  
+  "plate_number_formats": {
+    "digits1": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"],
+    "digits2": ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    "digits": ["1000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000"],
+    "letters": ["AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG", "HHH", "III", "JJJ", "KKK", "LLL", "MMM", "NNN", "OOO", "PPP", "QQQ", "RRR", "SSS", "TTT", "UUU", "VVV", "WWW", "XXX", "YYY", "ZZZ"]
+  },
+  
+  "vin_manufacturers": [
+    "WVW", "WAG", "WDB", "BMW", "BLC", "JMB", "ZAR", "WP0", "VSS", "XLR", "2B3", "3G1", "1G1", "1FA", "2T1", "5FN", "JTD", "JT2", "JH2", "YV1", "TM9", "HMC", "KMH", "NEZ", "DAI", "MST", "GAR", "HGC", "VVV", "UU0"
+  ],
+  
+  "vin_years": ["R", "S", "T", "V", "W", "X", "Y", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+  
+  "vin_plants": ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R"]
+}

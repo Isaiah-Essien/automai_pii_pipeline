@@ -1,0 +1,65 @@
+{
+  "street_names": [
+    "Mandela", "Nkrumah", "Pan-African", "Liberty", "Independence", "Unity", "Victory", "Hope", "Peace", "Freedom",
+    "Constitution", "Republic", "National", "Royal", "Main", "First", "Second", "Third", "Fourth", "Fifth",
+    "Kenyatta", "Nyerere", "Banda", "Haile", "Senghor", "Kaunda", "Lumumba", "Tutu", "Biko", "Okonkwo",
+    "Victoria", "Albert", "George", "Elizabeth", "Windsor", "Oxford", "Cambridge", "New York", "Park", "Garden",
+    "Church", "Market", "Trade", "Commerce", "Business", "Industrial", "Commercial", "Station", "Terminal", "Boulevard",
+    "Avenue", "Street", "Lane", "Road", "Way", "Path", "Drive", "Court", "Square", "Place"
+  ],
+  
+  "street_types": [
+    "Street", "Avenue", "Road", "Boulevard", "Lane", "Drive", "Way", "Court", "Square", "Place",
+    "Circle", "Crescent", "Close", "Gardens", "Park", "Hill", "Vale", "Path", "Alley", "Passage"
+  ],
+  
+  "unit_types": [
+    "Apt", "Suite", "Unit", "Flat", "Room", "Office", "Block", "Building", "House", "Lot"
+  ],
+  
+  "cities_west_africa": [
+    "Lagos", "Accra", "Dakar", "Abidjan", "Tema", "Sekondi", "Kumasi", "Takoradi", "Onitsha", "Enugu",
+    "Ibadan", "Kano", "Abuja", "Port Harcourt", "Calabar", "Monrovia", "Freetown", "Conakry", "Bamako", "Ouagadougou",
+    "Lome", "Cotonou", "Porto-Novo", "Bissau", "Banjul", "Praia", "Kindia", "Bo", "Cape Coast", "Sekondi",
+    "Tamale", "Koforidua", "Bouakeville", "Daloa", "Yamoussoukro", "Bouake", "Man", "Seguela", "Kaolack", "Tambacounda",
+    "Saint-Louis", "Thies", "Ziguinchor", "Kolda", "Touba", "Kayes", "Ségou", "Mopti", "Gao", "Timbuktu",
+    "Quagadougou", "Bobo-Dioulasso", "Koudougou", "Ouarzazate", "Fez", "Marrakech", "Casablanca", "Rabat", "Tangier", "Agadir"
+  ],
+  
+  "cities_east_africa": [
+    "Nairobi", "Dar es Salaam", "Kampala", "Addis Ababa", "Kigali", "Bujumbura", "Mogadishu", "Mombasa", "Arusha", "Kigali",
+    "Kisumu", "Nakuru", "Dodoma", "Mbeya", "Zanzibar", "Asmara", "Djibouti", "Juba", "Goma", "Bukavu",
+    "Kigoma", "Iringa", "Moshi", "Tanga", "Kiunga", "Moroni", "Port Louis", "Antananarivo", "Toliara", "Antsirabe",
+    "Fianarantsoa", "Sambava", "Mahajanga", "Seychelles", "Victoria", "Port Blair", "Maseru", "Tete", "Harare", "Masvingo",
+    "Mutare", "Gweru", "Kalispell", "Livingstone", "Chipata", "Ndola", "Kitwe", "Chingola", "Lusaka", "Kabwe"
+  ],
+  
+  "cities_southern_africa": [
+    "Johannesburg", "Cape Town", "Durban", "Pretoria", "Harare", "Bulawayo", "Gaborone", "Lilongwe", "Blantyre", "Lusaka",
+    "Ndola", "Windhoek", "Maputo", "Luanda", "Huambo", "Benguela", "Livingstone", "Chipata", "Gweru", "Mutare",
+    "Pietermaritzburg", "Soweto", "Port Elizabeth", "East London", "Bloemfontein", "Kimberley", "Tshwane", "Polokwane", "Nelspruit", "Ermelo",
+    "Mbabane", "Manzini", "Maseru", "Leribe", "Morija", "Pjaks Drift", "Maun", "Francistown", "Serowe", "Orapa",
+    "Chikushi", "Shurugwi", "Mberengwa", "Zvishavane", "Kadoma", "Chinhoyi", "Kariba", "Rushinga", "Nkandla", "Odzi"
+  ],
+  
+  "cities_central_africa": [
+    "Kinshasa", "Brazzaville", "Yaoundé", "Douala", "Bangui", "Libreville", "Ndjamena", "Malabo", "Gaborone", "Kasai",
+    "Lubumbashi", "Kolwezi", "Goma", "Bukavu", "Kikwit", "Kananga", "Mbuji-Mayi", "Mbandaka", "Kisangani", "Beni",
+    "Matadi", "Boma", "Tshikapa", "Kasumba", "Uvira", "Dungu", "Bunia", "Faradje", "Lisala", "Bumba",
+    "Kasongo", "Kindu", "Lusambo", "Kamina", "Dilolo", "Sakania", "Kalemie", "Mwene-Ditu", "Manono", "Kipushi",
+    "Douala", "Bamenda", "Buea", "Garoua", "Maroua", "Kumba", "Limbé", "Kribi", "Ebolowa", "Bertoua",
+    "Port-Gentil", "Franceville", "Lambaréné", "Oyem", "Mouila", "Tchibanga", "N'Djamena", "Moundou", "Sarh", "Abeche",
+    "São Tomé", "Santo António", "Malabo", "Bata", "Ebebiyin", "Mongomo", "Aconibe", "Annobon", "Corisco"
+  ],
+  
+  "cities_north_africa": [
+    "Cairo", "Alexandria", "Giza", "Shebin El-Kom", "Tanta", "Mansoura", "Zagazig", "Aswan", "Luxor", "Assiut",
+    "Port Said", "Ismailia", "Suez", "Damietta", "Bani Suwayf", "Al-Minya", "Qena", "Sohag", "Hurghada", "Marsa Matruh",
+    "Casablanca", "Fez", "Marrakech", "Rabat", "Tangier", "Agadir", "Meknes", "Oujda", "Tetouan", "Taza",
+    "El Jadida", "Saffi", "Azemmour", "Kenitra", "Salé", "Taroudant", "Tiznit", "Safi", "Larache", "Alcazarquivir",
+    "Algiers", "Oran", "Constantine", "Annaba", "Blida", "Tlemcen", "Sidi Bel Abbès", "Tizi Ouzou", "Béjaïa", "Skikda",
+    "Tunis", "Sfax", "Sousse", "Kairouan", "Bizerte", "Gabes", "Djerba", "Gafsa", "Tozeur", "Kebili",
+    "Tripoli", "Benghazi", "Misrata", "Al Khoms", "Derna", "Tobruk", "Surt", "Zliten", "Awbari", "Sebha",
+    "Khartoum", "Omdurman", "Port Sudan", "Kassala", "Wad Madani", "Al-Qadarif", "Nyala", "El-Damir", "Tambul", "Atbai"
+  ]
+}

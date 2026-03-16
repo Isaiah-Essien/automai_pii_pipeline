@@ -1,0 +1,35 @@
+{
+  "manufacturers": [
+    "Philips", "Siemens", "GE Healthcare", "Medtronic", "Abbott", "Boston Scientific",
+    "Zimmer Biomet", "Stryker", "Johnson & Johnson", "Smith & Nephew", "Baxter", "Becton Dickinson",
+    "Novo Nordisk", "Roche", "Alcon", "Essilor", "CooperVision", "Allergan",
+    "ResMed", "Inogen", "Masimo", "Natus", "Spacelabs", "Hill-Rom",
+    "Entellus", "Invision", "Accellent", "Symmetry", "Merit", "Vascular Solutions",
+    "ATS Medical", "LivaNova", "Atricure", "Lantheus", "Misonix", "Coherent",
+    "Conmed", "Olympus", "Staar", "Sesen", "ARCA Biopharma", "Carl Zeiss"
+  ],
+  
+  "medical_device_models": {
+    "cardiac": ["Pacemaker Pro", "ICD-500", "CRT-2000", "AV Node S", "Rhythm Guard", "CardioSync", "Beat Monitor"],
+    "respiratory": ["AireFlow-200", "VentCare Pro", "RespiMed-X", "O2 Monitor", "Airway Guard", "Breath Assist"],
+    "orthopedic": ["HipFlex-500", "Spine Support S", "Joint Care 2000", "Bone Anchor", "Implant Pro", "Ortho-Guard"],
+    "imaging": ["CT Scan Pro", "MRI System-500", "Ultrasound-2000", "X-Ray Vision", "Scan Monitor", "Imaging Suite"],
+    "monitoring": ["ECG Monitor", "Blood Pressure System", "Pulse Ox Pro", "Vital Signs 200", "Patient Guard"],
+    "infusion": ["IV Pump 500", "Infusion Robot", "Med Deliver", "Fluid Control", "Smart Infuse"],
+    "dialysis": ["Hemodialysis 3000", "Kidney Care Pro", "Fluid Management", "Renal System", "Dialysis Guard"],
+    "surgical": ["Surgical Robot", "Electrocautery Pro", "OR Suite 2000", "Suction System", "Surgical Guide"],
+    "general": ["Hospital Bed 200", "Stretcher Pro", "Wheelchair HD", "Patient Lift", "Mobility Aid"]
+  },
+  
+  "serial_prefixes": [
+    "SN", "S/N", "Serial", "Ser", "ID", "REF", "MFG", "MAN", "DEV", "UNIT",
+    "SYS", "INV", "LOT", "BATCH", "EQ", "EQUIP", "ASSET", "REG", "TAG", "CODE"
+  ],
+  
+  "serial_number_length": [8, 10, 12, 14, 16],
+  
+  "character_sets": {
+    "alphanumeric": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+    "numeric": "0123456789"
+  }
+}

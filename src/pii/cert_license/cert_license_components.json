@@ -1,0 +1,30 @@
+{
+  "certificate_types": [
+    "Birth", "Death", "Marriage", "Divorce", "Adoption", "Naturalization",
+    "Medical", "Vaccination", "Professional", "Educational", "Training",
+    "Competency", "Credential", "Specialty", "Board", "Diplomatic",
+    "Travel", "Immigration", "Work", "Clearance", "Security"
+  ],
+  
+  "license_prefixes": {
+    "driver": ["DL", "DRV", "DL-", "DRLIC", "DLNUM", "DRVLIC"],
+    "medical": ["MD", "DO", "MD-", "MDLIC", "PHYSLIC", "PHYS"],
+    "nursing": ["RN", "LPN", "NP", "RN-", "NURSE", "NRSLIC"],
+    "pharmacy": ["RPH", "PHARM", "RPH-", "PHARLIC", "PH-"],
+    "dentistry": ["DDS", "DMD", "DDS-", "DENT", "DENTLIC"],
+    "law": ["BAR", "ATTY", "BAR-", "LAWLIC", "LEGAL"],
+    "psychology": ["PSY", "PSYCH", "PSY-", "PSYCHLIC", "PSYLIC"],
+    "social_work": ["LCSW", "SW", "LCSW-", "SOCWORK"],
+    "architecture": ["ARC", "ARCH", "ARC-", "ARCHLIC"],
+    "engineering": ["PE", "ENG", "PE-", "ENGLIC", "ENGR"],
+    "accounting": ["CPA", "ACC", "CPA-", "CPATIC", "ACCTLIC"],
+    "real_estate": ["RE", "REALTOR", "RE-", "REALTLIC"],
+    "insurance": ["INS", "AGENT", "INS-", "INSLIC", "INSAGT"],
+    "aviation": ["PI", "CPILOT", "PI-", "AVILIC", "PILLIC"],
+    "marine": ["CAPTAIN", "MAR", "CAPT-", "MARLIC"],
+    "veterinary": ["VET", "DVM", "VET-", "VETLIC", "DVMLIC"],
+    "general": ["LIC", "CERT", "REG", "CREDID", "PROFLIC"]
+  },
+  
+  "years": [2020, 2021, 2022, 2023, 2024, 2025, 2026]
+}

@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "total_countries": 15,
+    "total_first_names": 100,
+    "total_middle_names": 80,
+    "total_last_names": 120,
+    "description": "Comprehensive collection of African names from various countries and regions"
+  },
+  "titles": [
+    "Mr.", "Mrs.", "Ms.", "Dr.", "Prof.", "Rev.", "Chief", "Hon."
+  ],
+  "suffixes": [
+    "Jr.", "Sr.", "II", "III", "PhD", "MD", "Esq."
+  ],
+  "first_names": {
+    "West_Africa": {
+      "Nigeria": ["Chinedu", "Nneka", "Amara", "Kofi", "Ama", "Kwame", "Akosua", "Kwesi", "Adeyemi", "Folake"],
+      "Ghana": ["Kwasi", "Ama", "Kojo", "Abena", "Kwame", "Akosua", "Yaw", "Esi", "Nana", "Akua"],
+      "Senegal": ["Ousmane", "Aminata", "Mandela", "Fatou", "Ibrahima", "Rochelle", "Jérôme", "Aïda", "Moussa", "Kadiatou"],
+      "Ivory_Coast": ["Jean-Paul", "Amélie", "Pierre", "Angeline", "Michel", "Fabienne", "Antoine", "Sylvie", "Laurent", "Véronique"],
+      "Mali": ["Mamadou", "Fatoumata", "Bakari", "Hawa", "Ibrahim", "Aïssatou", "Seydou", "Maïmouna", "Souleymane", "Djeneba"]
+    },
+    "East_Africa": {
+      "Kenya": ["Kamau", "Wanjiru", "Otieno", "Njoki", "Kipchoge", "Muthoni", "Kiplagat", "Nairobi", "Juma", "Amara"],
+      "Tanzania": ["Tendai", "Stella", "John", "Grace", "Peter", "Rose", "David", "Margaret", "James", "Victoria"],
+      "Uganda": ["Abdu", "Kansiime", "Lwasa", "Mbabazi", "Kabali", "Namuli", "Sekidde", "Namirembe", "Ssali", "Nandujja"],
+      "Ethiopia": ["Abebe", "Hiwot", "Tesfaye", "Almaz", "Girma", "Marta", "Dawit", "Aster", "Anteneh", "Meskerem"]
+    },
+    "Southern_Africa": {
+      "South_Africa": ["Thabo", "Nomsa", "Sipho", "Zinhle", "Njabulo", "Lerato", "Mandla", "Busiswa", "Sizwe", "Thandiwe"],
+      "Zimbabwe": ["Tinashe", "Tatiana", "Siyabonga", "Precious", "Clive", "Jennifer", "Samson", "Patricia", "Munyaradzi", "Sophia"],
+      "Botswana": ["Kabelo", "Bokang", "Mpho", "Boitumelo", "Thabang", "Lethaba", "Kefilwe", "Motlatsi", "Kelebogile", "Thabiso"]
+    },
+    "Central_Africa": {
+      "Cameroon": ["Yannick", "Amélie", "Jules", "Françoise", "Alphonse", "Bernadette", "Claude", "Simone", "Patrice", "Vivienne"],
+      "DRC": ["Ekambi", "Munashe", "Sekela", "Furaha", "Tembo", "Mwamba", "Lukamba", "Mbalala", "Azikiwe", "Kamita"],
+      "Central_African_Republic": ["Baphouor", "Kamara", "Yakpre", "Nyota", "Koffi", "Zainaba", "Emmanuel", "Adah", "Maurice", "Fatima"]
+    }
+  },
+  "middle_names": {
+    "West_Africa": ["Eze", "Uche", "Obi", "Ademoye", "Boateng", "Mensah", "Sileye", "Toure", "Traore", "Diallo", "Idrissa", "Bah", "Sall", "Sow", "Diouf"],
+    "East_Africa": ["Kariuki", "Gitonga", "Nkosi", "Orengo", "Kiplagat", "Mwangi", "Mutua", "Nyambura", "Ochieng", "Kipchoge", "Kipkorir", "Kipkemboi"],
+    "Southern_Africa": ["Ncube", "Khumalo", "Mabuza", "Ndlela", "Sithole", "Dlamini", "Mthembu", "Chakrabarti", "Gumede", "Mungai"],
+    "North_Africa": ["Ibrahim", "Mohamed", "Hassan", "Ahmed", "Fadil", "Karim", "Nabil", "Rafiq", "Tariq", "Wassim"],
+    "General_African": ["Opara", "Ejiro", "Amadi", "Okonkwo", "Adeyinka", "Adekunle", "Ogene", "Musa", "Adeyele", "Ifeoma"]
+  },
+  "last_names": {
+    "West_Africa": {
+      "Nigeria": ["Okonkwo", "Adeyemi", "Olugbade", "Afolayan", "Okoro", "Njemanze", "Okafor", "Ozuru", "Okpara", "Ezeoke", "Adeniyi", "Akintunde", "Adekunle", "Okafor", "Ajayi"],
+      "Ghana": ["Mensah", "Boateng", "Quarcoo", "Awotona", "Asiedu", "Osei", "Arhin", "Addai", "Appiah", "Agyemang", "Opong", "Kwakye", "Aidoo", "Anane", "Asante"],
+      "Senegal": ["Diallo", "Ba", "Sall", "Traore", "Sow", "Diouf", "Toure", "Sireye", "Sene", "Gassama", "Ndiaye", "Fall", "Faye", "Sarr", "Seye"],
+      "Ivory_Coast": ["Blé", "Touré", "Traore", "Diallo", "Gueye", "Kouame", "Siewe", "Amenounvé", "Koffi", "Assalé", "Camara", "Cherif", "N'Goran", "Bah", "Coulibaly"],
+      "Mali": ["Traore", "Diallo", "Toure", "Ba", "Diop", "Kone", "Keita", "Cisse", "Coulibaly", "Touré", "Sow", "Sall", "Diouf", "Fall", "Ndiaye"]
+    },
+    "East_Africa": {
+      "Kenya": ["Mwangi", "Kipchoge", "Ochieng", "Kariuki", "Kiplagat", "Njuguna", "Muthua", "Kipkemboi", "Khisa", "Gitau", "Wanjiru", "Kipkorir", "Kimani", "Kiprop", "Kipkurui"],
+      "Tanzania": ["Mwanje", "Mkonta", "Mwangi", "Kipchoge", "Mushi", "Kimani", "Makani", "Kipkurui", "Mbeche", "Kiplagat", "Ochieng", "Kiptugen", "Kipkoech", "Mbuva", "Kiplagat"],
+      "Uganda": ["Lwasa", "Ssali", "Sekidde", "Mawejje", "Ssemwanga", "Lweren", "Mwesigwa", "Nsubuga", "Kisolo", "Mutebi", "Katongole", "Mukasa", "Ssemuyaba", "Sseruwagi", "Nawankola"],
+      "Ethiopia": ["Tesfaye", "Abebe", "Hailemariam", "Girma", "Awoke", "Gemechu", "Taddesse", "Molla", "Desta", "Mengistu", "Yared", "Berhe", "Kebede", "Dubale", "Gebre"]
+    },
+    "Southern_Africa": {
+      "South_Africa": ["Nkosi", "Khumalo", "Ncube", "Dlamini", "Sithole", "Gumede", "Mthembu", "Ndlela", "Xaba", "Masondo", "Zikalala", "Ntombela", "Mbonambi", "Ntshangase", "Ntuli"],
+      "Zimbabwe": ["Munyaradzi", "Chinoda", "Chikwati", "Machakaire", "Chakanyuka", "Chinyoka", "Chivasa", "Mupezeni", "Nyagumbo", "Kamwendo", "Mhlophe", "Chikwati", "Muchenje", "Chabi", "Chabata"],
+      "Botswana": ["Kabelo", "Yelele", "Makwala", "Tladi", "Mapete", "Molefe", "Kgoana", "Mokgadi", "Modise", "Matenge", "Kgoathe", "Mothusi", "Mokobi", "Mofokeng", "Tshele"]
+    }
+  }
+}

@@ -209,5 +209,8 @@ __marimo__/
 # Generated PHI data and configuration templates
 generated_data/
 
-# JSON data files (datasets, templates, components)
-*.json
+# Generated dataset files only (large data files not needed in repo)
+*_dataset.json
+
+# Output folder (contains generated datasets and templates)
+output/

@@ -5,7 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
-
+PR_MESSAGE.md
+data/
 # Distribution / packaging
 .Python
 build/
@@ -214,3 +215,6 @@ generated_data/
 
 # Output folder (contains generated datasets and templates)
 output/
+
+# Merge state (used to skip redundant regeneration)
+data/final_pii/.merge_state.json

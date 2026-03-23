@@ -2,6 +2,14 @@
 
 This system provides a unified interface to generate all 14+ HIPAA PII (Protected Health Information) datasets for healthcare machine learning and NER (Named Entity Recognition) training.
 
+## Final Merged Datasets
+
+The cleaned, merged PII datasets (2.2M+ records across 15 types) are hosted externally:
+
+**Download:** [Final PII Datasets (Drive)](https://drive.google.com/placeholder-link) *(link to be added)*
+
+These datasets consolidate contributor outputs into a unified schema with deduplication. See [Merge Pipeline](#merge-pipeline) below for how they are produced.
+
 ## Overview
 
 The system includes generators for:
@@ -71,6 +79,44 @@ python3 main.py --list-only
 ```
 
 This will display all generated files organized by PII type with file sizes.
+
+## Merge Pipeline
+
+Contributor datasets can be merged into a single cleaned output.
+
+### Merge Contributor Data
+
+Place extracted contributor zip files in `data/` (e.g. `data/idara_extracted/`, `data/orpheus_extracted/`), then run:
+
+```bash
+python merge_pii_data.py
+```
+
+- Discovers all `data/*_extracted/PHI(*)/` folders automatically
+- Deduplicates by (sentence, start, end, label)
+- Skips regeneration when source files unchanged
+- Use `--force` to regenerate even when unchanged
+
+Output: `data/final_pii/*.json` (15 files, one per PII type). Each record has:
+
+```json
+{
+  "id": 1,
+  "sentence": "Patient John Smith was admitted.",
+  "start": 8,
+  "end": 19,
+  "label": "PERSON",
+  "value": "John Smith"
+}
+```
+
+### Analyze Final Data
+
+```bash
+python analyze_final_pii.py
+```
+
+Reports record counts and file sizes per PII type.
 
 ## Output File Format
 
@@ -303,11 +349,15 @@ For issues or questions about:
 - Component data: Check `src/pii/{type}/` JSON files
 - Schema definitions: Check `src/pii_variation_schema.json`
 - Output formats: Check any `*.json` file in `output/`
+- Merge pipeline: Check `merge_pii_data.py` and `data/final_pii/`
 
 ## Next Steps
 
 1. Run `python3 main.py` to generate all datasets
 2. Check `output/` folder for organized datasets
 3. Review `GENERATION_REPORT.json` for generation statistics
-4. Use generated datasets for ML training (full or template versions)
-5. Customize individual generators as needed for your use case
+4. (Optional) Merge contributor data: `python merge_pii_data.py`
+5. (Optional) Analyze merged data: `python analyze_final_pii.py`
+6. Download final merged datasets from [Drive](https://drive.google.com/placeholder-link) *(link to be added)*
+7. Use generated datasets for ML training (full or template versions)
+8. Customize individual generators as needed for your use case

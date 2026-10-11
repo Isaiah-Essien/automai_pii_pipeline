@@ -1,0 +1,30 @@
+{
+  "seed": 20260912,
+  "_comment_seed": "Third corpus pass. A NEW seed is required: reusing an earlier seed reproduces that pass's sentences even when sentence_id differs.",
+  "target_lines": 162219327,
+  "start_sentence_id": 46707708,
+  "_comment_start": "One past the highest sentence_id in the renumbered corpora (46,707,707). The first two passes were renumbered to one id per line, so this pass continues that global sequence.",
+  "decision_mix": {
+    "REDACT": 0.55,
+    "PRESERVE": 0.45
+  },
+  "decision_mix_tolerance": 0.005,
+  "language_mix": {
+    "en": 1.0
+  },
+  "code_switch_rate": 0.12,
+  "source": "synthetic",
+  "shard_lines": 250000,
+  "negatives_ratio": 0.3,
+  "diversity": {
+    "max_template_share_within_phi_type": 0.005,
+    "max_lexical_entry_share_within_type": 0.001,
+    "min_lexicon_entries": 2000,
+    "long_tail_token_target": 60,
+    "min_long_tail_share": 0.02,
+    "min_variant_family_share": 0.15
+  },
+  "out_dir": "out",
+  "id_per_line": true,
+  "_comment_layout": "One consecutive sentence_id per emitted line, sentence grouping kept in group_id, matching out_renumbered and out2_renumbered."
+}

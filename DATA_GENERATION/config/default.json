@@ -1,0 +1,20 @@
+{
+  "seed": 20260827,
+  "target_lines": 1000,
+  "decision_mix": {"REDACT": 0.55, "PRESERVE": 0.45},
+  "decision_mix_tolerance": 0.005,
+  "language_mix": {"en": 1.0},
+  "code_switch_rate": 0.0,
+  "source": "synthetic",
+  "shard_lines": 250000,
+  "negatives_ratio": 0.30,
+  "diversity": {
+    "max_template_share_within_phi_type": 0.005,
+    "max_lexical_entry_share_within_type": 0.001,
+    "min_lexicon_entries": 2000,
+    "long_tail_token_target": 60,
+    "min_long_tail_share": 0.02,
+    "min_variant_family_share": 0.15
+  },
+  "out_dir": "out"
+}

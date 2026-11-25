@@ -2,6 +2,10 @@
 
 This system provides a unified interface to generate all 14+ HIPAA PII (Protected Health Information) datasets for healthcare machine learning and NER (Named Entity Recognition) training.
 
+## Contextual PHI training (fine-tuning placeholder)
+
+Span-level **de-identification training** (Stage 1 NER + Stage 2 REDACT/PRESERVE, Colab-oriented) lives in [`TRAINING/`](TRAINING/README.md). That package is a placeholder until full `part-*.jsonl` shards exist; it documents how we copy the repo to Colab, sample `eval_100k` / `ner_3M` / `adj_400k`, and fine-tune `xlm-roberta-base` (not pretrain from scratch). Synthetic corpus generation is under [`DATA_GENERATION/`](DATA_GENERATION/README.md).
+
 ## Final Merged Datasets
 
 The cleaned, merged PII datasets (2.2M+ records across 15 types) are hosted externally:

@@ -1,0 +1,8 @@
+# Contextual PHI fine-tuning (Stage 1 NER + Stage 2 adjudication).
+# Pin versions when we lock a Colab run; these are the targets we smoke-tested against.
+torch>=2.1.0
+transformers>=4.38.0
+datasets>=2.16.0
+accelerate>=0.27.0
+matplotlib>=3.7.0
+wordcloud>=1.9.0

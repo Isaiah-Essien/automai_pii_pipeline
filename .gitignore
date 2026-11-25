@@ -213,6 +213,10 @@ generated_data/
 # Generated dataset files only (large data files not needed in repo)
 *_dataset.json
 
+# Training artifacts (shards, checkpoints, EDA) stay on Drive or external HDD
+TRAINING/artifacts/
+**/phi_project/
+
 # Output folder (contains generated datasets and templates)
 output/
 
